@@ -1,0 +1,3 @@
+[submodule "media"]
+	path = media
+	url = https://github.com/AB1908/website-lfs.git

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include before.html %}
+
+    <article>
+        {% include header.html %}
+
+        {{ content }}
+
+        {% if page.layout != 'index' %}
+        <section>
+                <div class="navsite">
+                    <a class="prev" href="/index.html">Home</a>
+                    <a href="/contact-me.html">Contact Me</a>
+                </div>
+        </section>
+        {% endif %}
+        <section>
+        </section>
+    </article>
+
+    {% include after.html %}
+    {% include math.html %}
+</body>
+
+</html>
